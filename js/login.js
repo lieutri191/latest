@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("loggedIn", JSON.stringify({ email: user.email }));
             showNotification("Đăng nhập thành công!", "success"); // Thông báo thành công
             setTimeout(() => {
-                window.location.href = "main.html";  // Chuyển hướng đến trang chính
+                window.location.href = "index.html";  // Chuyển hướng đến trang chính
             }, 2000); // Đợi 2 giây để người dùng nhìn thấy thông báo
         } else {
             showNotification("Sai email hoặc mật khẩu.", "error"); // Thông báo lỗi
