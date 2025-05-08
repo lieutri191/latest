@@ -1,0 +1,109 @@
+/* promo.css */
+
+/* Các kiểu dáng cho banner */
+.promo-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 20px 0;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ff4081; /* Thêm đường viền dưới để làm banner nổi bật hơn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+}
+
+/* Phần nội dung banner */
+.promo-banner .promo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.promo-banner img {
+  max-width: 80%; /* Giảm kích thước hình ảnh để nhìn gọn gàng hơn */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.promo-banner p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Nút "Mua ngay" */
+.promo-banner .promo-link {
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.promo-banner .promo-link:hover {
+  background-color: #f50057;
+}
+
+/* Nút "Đóng" */
+.promo-banner .promo-close-btn {
+  background-color: #f50057;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.promo-banner .promo-close-btn:hover {
+  background-color: #ff4081;
+}
+
+/* Nút "Đóng" ở góc */
+.promo-banner .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.promo-banner .close-btn:hover {
+  color: #f50057;
+}
+
+/* Nút "Đóng và không hiển thị lại trong 5 phút" */
+.promo-banner .promo-hide-again-btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.promo-banner .promo-hide-again-btn:hover {
+  background-color: #f50057;
+}
